@@ -153,8 +153,8 @@ ul, a {
 
 .tattoist-perfil img {
   position: absolute;
-  width: 350px;
-  height: 200Px;
+  width: 90%;
+  height: 80%;
   transform: translate(7.8%, 13%);
 }
 
@@ -319,7 +319,95 @@ ul, a {
 }
 
 /* ------------------------responsve--------------------------*/
-@media (min-width:480px) {
+@media screen and (max-width:479px) {
+  .navegacion {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    border: 1px solid rgb(148, 214, 82);
+  }
+
+  .navegacion #menu {
+    width: 50%;
+    height: auto;
+    margin: 10% 16%;
+    display: block;
+    font-size: 25px;
+  }
+
+  #menu li {
+    padding: 10px 20px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .header h1, .header p {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    transform: none;
+  }
+
+  .header h1 {
+    font-size: 78px;
+    margin-top: 70px;
+  }
+
+  .header p {
+    margin-top: 140px;
+    font-size: 35px
+  }
+  .studio, .studio-img{
+    width: 100%;
+  }
+  .studio h2 {
+    display: none;
+  }
+
+  .studio p {
+    font-size: 18px;
+    margin-top: -50px;
+  }
+
+  .studio-img img{
+    width: 70%;
+    height: auto;
+    margin: auto 12%;
+    transform: none;
+  }
+  .studio-img p{
+    width: 70%;
+    height: 30px;
+    transform: none;
+    margin: auto 12%;
+    margin-top: -34px;
+  }
+  .contact, .contact-tattoist {
+    height: auto;
+  }
+
+  .contact-old {
+    display: block;
+    height: auto;
+    align-items: center;
+  }
+
+  .contact-old img {
+    width: 50%;
+    height: 35%;
+    margin: 5px 25%;
+  }
+
+  .contact-old ul {
+    width: 90%;
+    height: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:480px) {
   .header h1 {
     transform: translateX(65%);
     margin: 100px auto 0 auto;
@@ -408,7 +496,7 @@ ul, a {
   }
 }
 
-@media (min-width:668px) {
+@media screen and (min-width:668px) {
   .header h1 {
     transform: translateX(80%);
   }
@@ -471,7 +559,7 @@ ul, a {
   }
 }
 
-@media (min-width:1024px) {
+@media screen and (min-width:1024px) {
   .header h1 {
     margin: 100px 30% 0 26%;
   }
@@ -594,7 +682,8 @@ ul, a {
   .pie-der {
     margin: 0 0 0 20%;
   }
-  .pie-izq{
+
+  .pie-izq {
     margin: 0 30% 0 0;
   }
 }

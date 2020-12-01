@@ -83,6 +83,7 @@ ul, a {
 .studio {
   display: block;
   margin: auto;
+  height: auto;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -106,6 +107,7 @@ ul, a {
 .studio-img {
   display: block;
   margin: auto;
+  height: auto;
   padding: 10px;
 }
 

@@ -319,6 +319,7 @@ ul, a {
   transition-duration: 0.5s;
 }
 
+
 /* ------------------------responsve--------------------------*/
 @media screen and (max-width:479px) {
   * {
@@ -451,6 +452,10 @@ ul, a {
     margin: 10px 5% 5px 5%;
     transform: none;
   }
+  .certificate{
+    width: auto;
+    margin: auto 25%;
+  }
 }
 
 @media screen and (min-width:480px) {
@@ -469,9 +474,11 @@ ul, a {
   .navegacion #menu {
     transform: translateX(30%);
   }
-#btn{
-  display: none;
-}
+
+  #btn {
+    display: none;
+  }
+
   h2 {
     font-size: 45px;
   }
@@ -542,6 +549,10 @@ ul, a {
   .pie-der p {
     transform: translate(0%, -30%);
   }
+  .certificate{
+    margin: auto;
+    margin-left: 30%;
+  }
 }
 
 @media screen and (min-width:668px) {
@@ -589,7 +600,7 @@ ul, a {
   }
 
   .pie-izq {
-    margin-right: 150px;
+    margin-right: 10%;
   }
 
   .foter p {
@@ -604,6 +615,10 @@ ul, a {
     font-size: 30px;
     margin-top: 2px;
     margin-left: 25px;
+  }
+  .certificate{
+    margin: auto;
+    margin-right: 10%;
   }
 }
 
@@ -737,5 +752,10 @@ ul, a {
 
   .pie-izq {
     margin: 0 30% 0 0;
+  }
+  .certificate{
+    width: auto;
+    margin: 3%;
+    margin-right: 20%;
   }
 }

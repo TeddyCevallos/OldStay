@@ -380,7 +380,7 @@ ul, a {
     position: fixed;
   }
 
-  .lineas div{
+  .lineas div {
     border: 5px solid rgb(118, 50, 215);
     border-radius: 15px;
     margin: 7px 0;
@@ -469,7 +469,9 @@ ul, a {
   .navegacion #menu {
     transform: translateX(30%);
   }
-
+#btn{
+  display: none;
+}
   h2 {
     font-size: 45px;
   }
@@ -623,6 +625,10 @@ ul, a {
     width: auto;
     height: auto;
     font-size: 20px;
+  }
+
+  #btn {
+    display: none;
   }
 
   .studio {

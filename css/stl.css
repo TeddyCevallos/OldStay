@@ -1,0 +1,740 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #23282d;
+  margin: 0;
+}
+
+h1, h2, h3, h4, p, a {
+  font-style: italic;
+  text-align: center;
+}
+
+ul, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  color: rgb(210, 38, 97);
+  position: relative;
+}
+
+.header img {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  margin: auto;
+}
+
+.header h1, p {
+  position: absolute;
+  margin: auto;
+}
+
+.header h1 {
+  transform: translateX(70%);
+  font-size: 50px;
+  margin: 60px auto 0 auto;
+}
+
+.header p {
+  transform: translateX(200%);
+  margin: 110px auto 0 auto;
+}
+
+.navegacion{
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  background-color: #111111;
+}
+
+.navegacion img{
+  width: 75px;
+  height: 75px;
+  margin: 1% auto 2% 13px;
+  border-radius: 25%;
+}
+
+.navegacion .media{
+  float: right;
+  margin: 33px 100px  auto;
+}
+
+.media ul{
+  display: flex;
+}
+
+.media ul li a i{
+  font-size: 25px;
+  margin: auto 5px;
+  color: #8e9595;
+}
+
+.navegacion #menu {
+  position: absolute;
+  transform: translateX(10%);
+  display: flex;
+  margin: auto;
+  padding: 10px;
+}
+
+#menu li a {
+  padding: 0 20px;
+  color: rgb(168, 180, 128);
+}
+
+#menu li :hover {
+  color: #952ce7;
+}
+
+.main {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.main img {
+  width: 70%;
+  height: 55%;
+}
+
+.studio {
+  display: block;
+  margin: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.studio p {
+  margin: 10px 20px 10px 20px;
+  color: rgb(110, 173, 181);
+}
+
+.studio-img {
+  margin: auto;
+  height: auto;
+}
+
+.studio-img img {
+  margin: 5px;
+}
+
+
+.tattoist {
+  border-top: 5px solid rgb(46, 194, 118);
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.tattoist h2 {
+  margin: 10px auto;
+  color: #952ce7;
+}
+
+.tattoist p {
+  position: relative;
+  transform: translateX(0%);
+  line-height: -0.1px;
+  color: rgb(110, 173, 181);
+  margin: -5px 20px 10px 20px;
+}
+
+.tattoist-perfil {
+  clear: both;
+  width: 90%;
+  height: 250px;
+  margin: auto;
+  align-items: center;
+  position: relative;
+}
+
+.tattoist-perfil img {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  transform: translate(7.8%, 13%);
+}
+
+.tattoist-perfil p {
+  margin: -5px 20px 10px 20px;
+}
+
+.tattoist-perfil ul {
+  position: absolute;
+  transform: translate(7.7%, 88.5%);
+  width: 79%;
+  height: 80px;
+  padding: 20px;
+  background-color: rgba(20, 20, 20, 0.5);
+}
+
+.galery {
+  border-top: 5px solid rgb(46, 194, 118);
+  margin: auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  display: flow-root;
+}
+
+.galery h2 {
+  color: #952ce7;
+  margin: 10px auto;
+}
+
+.galery-img {
+  display: flex;
+  display: flow-root;
+  height: auto;
+}
+
+.galery-img img {
+  width: 42.5%;
+  height: 150px;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.galery-img img:hover {
+  transform: scale(120%);
+  transition-duration: 2s;
+}
+
+.galery-img p {
+  margin: auto;
+  padding: 10px;
+  width: 38%;
+  text-align: center;
+  transform: translate(11.5%, -171%);
+  background-color: rgba(20, 20, 20, 0.5);
+  color: rgb(46, 194, 118);
+  font-size: 12px;
+}
+
+.contact {
+  border-top: 5px solid rgb(46, 194, 118);
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact h2, .contact-tattoist h3 {
+  color: #952ce7;
+  margin: 10px auto;
+}
+
+.contact-old {
+  display: inline-flex;
+  align-items: center;
+  width: 90%;
+  height: 130px;
+  margin: 0 5%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contact-old img {
+  width: 150px;
+  height: 130px;
+}
+
+.contact-old ul {
+  color: rgb(110, 173, 181);
+  text-align: left;
+  margin: 10px;
+  padding: 10px 5px;
+  width: 250Px;
+  height: 110px;
+}
+
+.contact-tattoist {
+  width: 100%;
+  height: 350px;
+}
+
+.contact-tattoist .contact-old {
+  margin-bottom: 5%;
+}
+
+.foter {
+  clear: both;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-top: 5px solid rgb(46, 194, 118);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  align-items: center;
+}
+
+.foter p {
+  transform: translate(9%, 10%);
+}
+
+.pie-der {
+  align-items: center;
+  text-align: center;
+  color: rgb(210, 38, 97);
+  width: 250px;
+  height: 150px;
+  margin: 10px auto;
+  font-size: 25px;
+}
+
+.pie-der img {
+  width: 60px;
+  height: 50px;
+  margin: auto;
+}
+
+.pie-der p {
+  clear: both;
+  width: 250px;
+  height: auto;
+  transform: translate(0%, -30%);
+}
+
+.pie-izq ul {
+  width: 125px;
+  height: 30px;
+  margin: auto;
+  margin-top: -25px;
+  display: flex;
+  align-self: center;
+}
+
+.pie-izq ul li i {
+  font-size: 23px;
+  margin-top: 2px;
+  margin-left: 15px;
+  color: #ffffff;
+}
+
+.pie-izq ul li i:hover {
+  color: rgb(46, 194, 118);
+  transform: scale(110%);
+  transition-duration: 0.5s;
+}
+
+
+/* ------------------------responsve--------------------------*/
+@media screen and (max-width:479px) {
+  * {
+    margin: 0;
+  }
+
+  .navegacion {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+  }
+
+  .navegacion #menu {
+    width: 50%;
+    height: auto;
+    margin: 10% 16%;
+    display: block;
+    font-size: 25px;
+  }
+
+  #menu li {
+    padding: 10px 20px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .header h1, .header p {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    transform: none;
+  }
+
+  .header h1 {
+    font-size: 78px;
+    margin-top: 70px;
+  }
+
+  .header p {
+    margin-top: 140px;
+    font-size: 35px
+  }
+
+  #btn {
+    width: auto;
+    margin: auto;
+    display: none;
+  }
+
+  label {
+    display: block;
+    width: 40px;
+    height: auto;
+    margin: 0;
+    transform: translate(50%, 10%);
+    cursor: pointer;
+    position: fixed;
+  }
+
+  .lineas div {
+    border: 5px solid rgb(118, 50, 215);
+    border-radius: 15px;
+    margin: 7px 0;
+  }
+
+  #btn:checked~.navegacion {
+    display: block;
+    transition: all .6s ease-in-out;
+  }
+
+  .studio, .studio-img {
+    width: 100%;
+  }
+
+  .studio h2 {
+    display: none;
+  }
+
+  .studio p {
+    font-size: 18px;
+    margin-top: -50px;
+  }
+
+  .studio-img img {
+    width: 70%;
+    height: auto;
+    margin: auto 12%;
+    transform: none;
+  }
+
+
+  .contact, .contact-tattoist {
+    height: auto;
+  }
+
+  .contact-old {
+    display: block;
+    height: auto;
+    align-items: center;
+  }
+
+  .contact-old img {
+    width: 50%;
+    height: 35%;
+    margin: 5px 25%;
+  }
+
+  .contact-old ul {
+    width: 90%;
+    height: auto;
+    text-align: center;
+  }
+
+  .foter {
+    display: block;
+  }
+
+  .foter .copy {
+    text-align: center;
+    width: 90%;
+    margin: 10px 5% 5px 5%;
+    transform: none;
+  }
+  .certificate{
+    width: auto;
+    margin: auto 25%;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .header h1 {
+    transform: translateX(65%);
+    margin: 100px auto 0 auto;
+    font-size: 70px;
+  }
+
+  .header p {
+    transform: translateX(165%);
+    margin: 170px auto 0 auto;
+    font-size: 25px;
+  }
+
+  .navegacion #menu {
+    transform: translateX(30%);
+  }
+
+  #btn {
+    display: none;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .main {
+    margin-top: 50px;
+  }
+
+  .studio-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .studio-img img {
+    width: 280Px;
+    height: 70%;
+  }
+
+
+
+  .tattoist-perfil {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .tattoist-perfil img {
+    transform: translate(0%);
+    display: flex;
+    position: relative;
+    width: 45%;
+    height: 80%;
+    margin: 20px 0 20px 20px;
+  }
+
+  .tattoist-perfil ul {
+    position: relative;
+    width: 40%;
+    height: 65%;
+    margin: 20px 20px 20px 0;
+    text-align: left;
+    transform: translate(0%);
+  }
+
+  .foter p {
+    transform: translate(17%);
+  }
+
+  .pie-der p {
+    transform: translate(0%, -30%);
+  }
+  .certificate{
+    margin: auto;
+    margin-left: 30%;
+  }
+}
+
+@media screen and (min-width:668px) {
+  .header h1 {
+    transform: translateX(80%);
+  }
+
+  .header p {
+    transform: translate(185%);
+  }
+
+  .navegacion #menu {
+    transform: translate(40%);
+  }
+
+  .studio h2 {
+    transform: translate(70%);
+  }
+
+  .studio-img {
+    height: 500%;
+  }
+
+  .studio-img img {
+    width: 300Px;
+    height: 200px;
+  }
+
+  .foter {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .pie-der {
+    margin-left: 40px;
+  }
+
+  .pie-izq {
+    margin-right: 10%;
+  }
+
+  .foter p {
+    transform: translate(0%, 400%);
+  }
+
+  .pie-der p {
+    transform: translate(0%, -30%);
+  }
+
+  .pie-izq ul li i {
+    font-size: 30px;
+    margin-top: 2px;
+    margin-left: 25px;
+  }
+  .certificate{
+    margin: auto;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .header h1 {
+    margin: 100px 30% 0 26%;
+  }
+
+  .header p {
+    margin: 170px 30% 0 26%;
+  }
+
+  .header img {
+    height: 500px;
+  }
+
+  .navegacion #menu {
+    margin:1.7% 17.3%;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+  }
+
+
+
+  .navegacion img{
+    width: 75px;
+    height: 75px;
+    margin: 0.5% auto 2% 100px;
+    border-radius: 25%;
+  }
+
+  #btn {
+    display: none;
+  }
+
+  .studio {
+    height: auto;
+    margin: 205px auto 0 auto;
+  }
+
+  .studio p {
+    margin: 10px 18% 0;
+  }
+
+  .galery-img img {
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+  }
+
+  .tattoist {
+    display: inline-flex;
+    display: flow-root;
+    margin: 5% auto;
+  }
+
+  .tattoist-perfil {
+    display: block;
+    width: 80%;
+    height: 500px;
+    margin-top: 20px;
+    align-content: center;
+    justify-content: space-between;
+  }
+
+  .tattoist-perfil img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+
+  .tattoist-perfil ul {
+    position: absolute;
+    width: 96.5%;
+    height: 150px;
+    margin: 310px 0 0 0;
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  .galery-img img {
+    width: 30%;
+    height: 300px;
+    margin: 0 0 0 2.4%;
+  }
+
+  .contact-old {
+    width: 300px;
+    height: 350px;
+    display: block;
+    margin: auto;
+  }
+
+  .contact-tattoist {
+    display: inline-flex;
+    margin: 40px 0 20px;
+  }
+
+  .contact-tattoist h3 {
+    clear: both;
+    padding: 10px;
+    font-size: 25px;
+    transform: translate(175%, -17%);
+  }
+
+  .contact-tattoist .contact-old {
+    transform: translate(-65%);
+  }
+
+  .contact-old img {
+    width: 200px;
+    height: 150px;
+    margin: 10px 45px;
+  }
+
+  .contact-old ul {
+    width: 250px;
+    height: 150px;
+    margin: auto 35px;
+  }
+
+  .foter {
+    width: 99%;
+    margin: 50px auto 5px;
+  }
+
+  .pie-der {
+    margin: 0 0 0 20%;
+  }
+
+  .pie-izq {
+    margin: 0 30% 0 0;
+  }
+  .certificate{
+    width: auto;
+    margin: 3%;
+    margin-right: 20%;
+  }
+}

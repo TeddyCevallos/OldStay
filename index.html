@@ -12,134 +12,217 @@
 </head>
 
 <body>
+  <!--
+  En el contenedor header mantenemos todos los
+  items que se relflejan eal llegar al sitio web
+  la etiqueta input, label son para realizar la animacion
+  respectiva en el metodo responsivo con vista en dispositivos
+  mobiles.
+  -->
   <header class="header">
     <input type="checkbox" id="btn">
-    <img src="OldStayTattoo/caratula-dark.png" alt="">
-    <h1 id="inicio">Old Stay</h1>
-    <p>Tattoo Studio</p>
+    <label for="btn">
+      <img class="logo" src="OldStayTattoo/oldstay.png" for="btn" alt="">
+    </label>
     <div class="navegacion">
-      <img src="OldStayTattoo/oldstay.jpg" alt="">
+      <label for="btn">
+        <div class="lineas">
+          <div class="">
+          </div>
+          <div class="">
+          </div>
+          <div class="">
+          </div>
+        </div>
+      </label>
       <ul id="menu">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#tattoist">Equipo de Trabajo</a></li>
-        <li><a href="#galery">Portafolio</a></li>
-        <li><a href="#cont">Cita</a></li>
+        <li><a href="#inicio">
+            <h5>Inicio</h5>
+          </a></li>
+        <li><a href="#tattoist">
+            <h5>Equipo de Trabajo</h5>
+          </a></li>
+        <li><a href="#galery">
+            <h5>Galería</h5>
+          </a></li>
+        <li><a href="#cont">
+            <h5>Cita</h5>
+          </a></li>
       </ul>
       <div class="media">
         <ul>
-          <li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="https://www.facebook.com/oldstaytattoo" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
           <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
           <li><a href="https://www.instagram.com/oldstaytattoo/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a></li>
         </ul>
       </div>
     </div>
-    <label for="btn">
-      <div class="lineas">
-        <div class="">
-        </div>
-        <div class="">
-        </div>
-        <div class="">
-        </div>
-      </div>
-    </label>
+    <img id="inicio" src="OldStayTattoo/caratula-dark.png" alt="">
+    <!--  <h1 >Old Stay</h1>
+    <h4>Tattoo Studio</h4> -->
   </header>
+  <!--
+  En este contenedor esta el cuerpo  con el
+  contenido de la pagina se dividen en secciones
+  con diferentes clases.
+  En las secciones se subdividen en mas contenedores
+  div para poder maquetar la arquitectura del sitio
+-->
   <main class="main">
     <section class="studio">
-      <p>Somos un equipo de trabajo humilde pero con ganas de
+      <h3>Somos un equipo de trabajo humilde pero con ganas de
         superarce cada dia, nuestras instalaciones estan a su servicio <br>
-        Hoy eres un lector y mañana serás un líder </p>
+        Hoy eres un lector y mañana serás un líder </h3>
       <div class="studio-img">
         <img src="OldStayTattoo/anubis.png" alt="">
         <img src="OldStayTattoo/tiempo.png" alt="">
       </div>
-      <h3>"La perfección no es alcanzable, pero si perseguimos la perfecciónpodemos conseguir la excelencia" </h3><h5>- Vince Lombardi</h5>
+      <h3>"La perfección no es alcanzable, pero si perseguimos la perfección podemos conseguir la excelencia" </h3>
+      <h5>- Vince Lombardi</h5>
     </section>
     <section class="tattoist">
       <h2 id="tattoist">Tattoist</h2>
       <p>Nuestro equipo de trabajo comformado por un elenco de artistas
         de la mejor calidad, aqui podremos ver su perfil laboral</p>
       <div class="tattoist-perfil">
-        <img src="OldStayTattoo/oldstay.jpg" alt="">
+        <img src="OldStayTattoo/oldstay.png" alt="">
         <ul>
-          <p>Mi nombre es un man com la verga </p>
-          <h3>Especialidad</h3>
-          <li>Realismo B/N & Color</li>
-          <li>Puntillizmo de arrastre</li>
+          <li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </li>
+          <li>
+            <h3>Especialidad</h3>
+          </li>
+          <li>
+            <p>
+              Realismo B/N & Color
+            </p>
+          </li>
+          <li>
+            <p>Puntillizmo de arrastre</p>
+          </li>
         </ul>
       </div>
-
       <div class="tattoist-perfil">
-        <img src="OldStayTattoo/oldstay.jpg" alt="">
+        <img src="OldStayTattoo/oldstay.png" alt="">
         <ul>
-          <p>Mi nombre es un man com la verga </p>
-          <h3>Especialidad</h3>
-          <li>Realismo B/N & Color</li>
-          <li>Puntillizmo de arrastre</li>
+          <li>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+          </li>
+          <li>
+            <h3>Especialidad</h3>
+          </li>
+          <li>
+            <p>
+              Realismo B/N & Color
+            </p>
+          </li>
+          <li>
+            <p>Puntillizmo de arrastre</p>
+          </li>
         </ul>
+
       </div>
     </section>
     <section class="galery">
       <h2 id="galery">Galery</h2>
-      <a href="https://www.instagram.com/oldstaytattoo/?hl=es-la"><h3>@oldstaytattoo</h3> </a>
+      <a href="https://www.instagram.com/oldstaytattoo/?hl=es-la">
+        <h3>@oldstaytattoo</h3>
+      </a>
       <div class="galery-img">
-        <img src="OldStayTattoo/leon.png" alt="">
-        <img src="OldStayTattoo/lectali.png" alt="">
-        <img src="OldStayTattoo/serpiente.png" alt="">
-        <img src="OldStayTattoo/pulpo.png" alt="">
-        <img src="OldStayTattoo/rosareloj.png" alt="">
-        <img src="OldStayTattoo/oriana.png" alt="">
-        <img src="OldStayTattoo/skulsmoke.png" alt="">
-        <img src="OldStayTattoo/skulbike.png" alt="">
-        <img src="OldStayTattoo/sirena.png" alt="">
-        <img src="OldStayTattoo/dorila.png" alt="">
-        <img src="OldStayTattoo/smoke.png" alt="">
-        <img src="OldStayTattoo/vikingo.png" alt="">
-        <img src="OldStayTattoo/geometrico.png" alt="">
-        <img src="OldStayTattoo/ciclodevida.png" alt="">
-        <img src="OldStayTattoo/firestom.png" alt="">
+        <div class="row">
+          <div class="column">
+            <img src="OldStayTattoo/leon.png" alt="">
+            <img src="OldStayTattoo/lectali.png" alt="">
+            <img src="OldStayTattoo/serpiente.png" alt="">
+            <img src="OldStayTattoo/pulpo.png" alt="">
+          </div>
+          <div class="column">
+            <img src="OldStayTattoo/oriana.png" alt="">
+            <img src="OldStayTattoo/skulsmoke.png" alt="">
+            <img src="OldStayTattoo/skulbike.png" alt="">
+            <img src="OldStayTattoo/sirena.png" alt="">
+          </div>
+          <div class="column">
+            <img src="OldStayTattoo/rosareloj.png" alt="">
+            <img src="OldStayTattoo/dorila.png" alt="">
+            <img src="OldStayTattoo/smoke.png" alt="">
+          </div>
+          <div class="column">
+            <img src="OldStayTattoo/vikingo.png" alt="">
+            <img src="OldStayTattoo/geometrico.png" alt="">
+            <img src="OldStayTattoo/ciclodevida.png" alt="">
+            <img src="OldStayTattoo/firestom.png" alt="">
+          </div>
+        </div>
       </div>
     </section>
     <section class="contact">
       <h2 id="cont">Contact</h2>
       <div class="contact-old">
-        <img src="OldStayTattoo/oldstay.jpg" alt="">
+        <img src="OldStayTattoo/oldstay.png" alt="">
         <ul>
-          <li>OldStay Tatto Studio</li>
-          <li>Mail: <a href="#">mail@gmail.com</a></li>
-          <li>Telefonos: 0987654321 0987654321</li>
-          <li>Social: <a href="#">redes sociales del studio</a></li>
+          <li>
+            <p>Tattoist artist: Nombre de artista tatuador</p>
+          </li>
+          <li>
+            <p>Contacto: <a href="#">contacto@gmail.com</a></p>
+          </li>
+          <li>
+            <p>Telefono: 0987654321</p>
+          </li>
+          <li>
+            <p>Social: <a href="#">redes sociales del tattoist</a></p>
+          </li>
 
         </ul>
       </div>
       <div class="contact-tattoist">
         <h3>OldStay Tattoist contact</h3>
         <div class="contact-old">
-          <img src="OldStayTattoo/oldstay.jpg" alt="">
+          <img src="OldStayTattoo/oldstay.png" alt="">
           <ul>
-            <li>Tattoist artist: Nombre de artista tatuador</li>
-            <li>Contacto: <a href="#">contacto@gmail.com</a></li>
-            <li>Telefono: 0987654321</li>
-            <li>Social: <a href="#">redes sociales del tattoist</a></li>
+            <li>
+              <p>Tattoist artist: Nombre de artista tatuador</p>
+            </li>
+            <li>
+              <p>Contacto: <a href="#">contacto@gmail.com</a></p>
+            </li>
+            <li>
+              <p>Telefono: 0987654321</p>
+            </li>
+            <li>
+              <p>Social: <a href="#">redes sociales del tattoist</a></p>
+            </li>
           </ul>
         </div>
         <div class="contact-old">
-          <img src="OldStayTattoo/oldstay.jpg" alt="">
+          <img src="OldStayTattoo/oldstay.png" alt="">
           <ul>
-            <li>Tattoist artist: Nombre de artista tatuador</li>
-            <li>Contacto: <a href="#">contacto@gmail.com</a></li>
-            <li>Telefono: 0987654321</li>
-            <li>Social: <a href="#">redes sociales del tattoist</a></li>
+            <li>
+              <p>Tattoist artist: Nombre de artista tatuador</p>
+            </li>
+            <li>
+              <p>Contacto: <a href="#">contacto@gmail.com</a></p>
+            </li>
+            <li>
+              <p>Telefono: 0987654321</p>
+            </li>
+            <li>
+              <p>Social: <a href="#">redes sociales del tattoist</a></p>
+            </li>
           </ul>
         </div>
       </div>
     </section>
+    <!--
+  -->
   </main>
   <footer class="foter">
     <div class="pie-der">
-    <img src="OldStayTattoo/oldstay.jpg" alt="">
+      <img src="OldStayTattoo/oldstay.png" alt="">
       <h1>OldStay</h1>
-      <p>Tattoo studio</p>
+      <h4>Tattoo studio</h4>
     </div>
     <div class="pie-izq">
       <ul>
@@ -149,9 +232,9 @@
       </ul>
     </div>
     <div class="certificate">
-      <a href="https://app.userfeel.com/t/2f67c599" target="_blank"><img src="https://app.userfeel.com/tester/415017/image?.png" width="225" class="no-b-lazy"></a>
+      <a href="https://app.userfeel.com/t/2f67c599" target="_blank"><img src="https://app.userfeel.com/tester/415017/image?.png" class="no-b-lazy"></a>
     </div>
-    <p class="copy">&copy OldStay tattoo studio todos lo derechos reservados 2020</p>
+    <p class="copy">&copy OldStay tattoo studio todos lo derechos reservados 2021</p>
   </footer>
   <script src="main.js">
   </script>

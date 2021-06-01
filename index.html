@@ -24,7 +24,7 @@
     <label for="btn">
       <img class="logo" src="OldStayTattoo/oldstay.png" for="btn" alt="">
     </label>
-    <div class="navegacion">
+    <div class="navegacion" id="navbar">
       <label for="btn">
         <div class="lineas">
           <div class="">
@@ -34,6 +34,7 @@
           <div class="">
           </div>
         </div>
+        <img class="logo" src="OldStayTattoo/oldstay.png" for="btn" alt="">
       </label>
       <ul id="menu">
         <li><a href="#inicio">
@@ -79,6 +80,12 @@
       </div>
       <h3>"La perfección no es alcanzable, pero si perseguimos la perfección podemos conseguir la excelencia" </h3>
       <h5>- Vince Lombardi</h5>
+      <div class="baner">
+        <!--
+        <a href="https://volutic.com/register.aspx?u=394603">Volutic | Earn money by reading emails</a>
+      -->
+        <a href="https://clicksgenie.com/register.aspx?u=616617"><img src="https://clicksgenie.com/Images/b_ads/10.gif" alt="banner" /></a>
+      </div>
     </section>
     <section class="tattoist">
       <h2 id="tattoist">Tattoist</h2>
@@ -214,6 +221,12 @@
           </ul>
         </div>
       </div>
+      <div class="baner">
+        <!--
+        <a href="https://volutic.com/default.aspx?u=394603">Volutic | Earn money by reading emails</a>
+      -->
+        <a href="https://clicksgenie.com/default.aspx?u=616617"><img src="https://clicksgenie.com/Images/b_ads/7.gif" alt="banner" /></a>
+      </div>
     </section>
     <!--
   -->
@@ -225,18 +238,58 @@
       <h4>Tattoo studio</h4>
     </div>
     <div class="pie-izq">
+      <h2>Sigueme en mis redes sociales mi Brother!</h2>
       <ul>
-        <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
-        <li><a href="https://www.instagram.com/oldstaytattoo/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <h3>"La perfección no es alcanzable, pero si perseguimos la perfección podemos conseguir la excelencia" </h3>
+          <h5>- Vince Lombardi</h5>
+        </li>
+        <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+          <h3>"La perfección no es alcanzable, pero si perseguimos la perfección podemos conseguir la excelencia" </h3>
+          <h5>- Vince Lombardi</h5>
+        </li>
+        <li><a href="https://www.instagram.com/oldstaytattoo/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
+          <h3>"La perfección no es alcanzable, pero si perseguimos la perfección podemos conseguir la excelencia" </h3>
+          <h5>- Vince Lombardi</h5>
+        </li>
       </ul>
     </div>
     <div class="certificate">
       <a href="https://app.userfeel.com/t/2f67c599" target="_blank"><img src="https://app.userfeel.com/tester/415017/image?.png" class="no-b-lazy"></a>
+      <h3>"La perfección no es alcanzable, pero si perseguimos la perfección podemos conseguir la excelencia" </h3>
+      <h5>- Vince Lombardi</h5>
     </div>
     <p class="copy">&copy OldStay tattoo studio todos lo derechos reservados 2021</p>
   </footer>
-  <script src="main.js">
+  <!--
+  Fuente w3school
+-->
+  <script>
+/*
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-150px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  <!--
+  -->
+  */
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-150px";
+      }
+    }
   </script>
 </body>
 

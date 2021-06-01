@@ -22,25 +22,84 @@ ul, a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 639px) {
-  .header {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    display: block;
-  }
+.header {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
+}
 
-  .header img {
-    width: 100%;
-    height: 65%;
-  }
+#btn {
+  width: auto;
+  margin: auto;
+  display: none;
+}
 
-  #btn {
-    width: auto;
-    margin: auto;
-    display: none;
-  }
+.header img {
+  width: 100%;
+  height: 65%;
+}
 
+.main {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main p {
+  color: #ffffff;
+}
+
+.studio, .tattoist, .galery, .contact, .foter {
+  width: 100%;
+  height: auto;
+  border-top: 5px solid #2ec276;
+  display: block;
+}
+
+.tattoist h2, .galery h2, .contact h2, .contact-tattoist h3 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.foter {
+  background: #999999;
+  clear: both;
+  align-items: center;
+}
+
+.foter p {
+  width: 90%;
+  margin: auto;
+  border-top: 1px solid #000000;
+}
+
+.pie-izq ul li h3, .pie-izq ul li h5 {
+  width: 80%;
+  margin: auto;
+}
+
+.certificate {
+  border-top: 1px solid #000000;
+}
+
+.baner {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.studio .baner a img {
+  width: 95%;
+  margin: auto;
+}
+
+@media screen and (max-width: 640px) {
   label {
     display: block;
     width: 50px;
@@ -55,6 +114,10 @@ ul, a {
     border-radius: 25px;
   }
 
+  .navegacion label img {
+    display: none;
+  }
+
   /*
   */
   .lineas div {
@@ -66,15 +129,16 @@ ul, a {
 
   #btn:checked~.navegacion {
     display: block;
-    transition: all 1.6s ease-in-out;
   }
 
   .navegacion {
     display: none;
     width: 100%;
     height: 100%;
+    top: 0;
     background: rgba(0, 0, 0, 0.8);
     position: fixed;
+    transition: all 1.6s ease-in-out;
   }
 
   .navegacion #menu {
@@ -130,23 +194,6 @@ ul, a {
     margin-bottom: 150px;
   }
 
-  .main {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .main p {
-    color: #ffffff;
-  }
-
-  .studio, .tattoist, .galery, .contact, .foter {
-    width: 100%;
-    height: auto;
-    border-top: 5px solid #2ec276;
-    display: block;
-  }
-
   .studio h3, .studio h5 {
     width: 90%;
     margin: 4.5% auto;
@@ -165,9 +212,10 @@ ul, a {
     margin: 2.5% 10%;
   }
 
-  .tattoist h2, .galery h2, .contact h2, .contact-tattoist h3 {
-    font-size: 30px;
-    margin-top: 10px;
+  .contact .baner a img {
+    width: 85%;
+    margin: auto;
+    max-width: 360px;
   }
 
   .tattoist p {
@@ -191,11 +239,6 @@ ul, a {
   .galery-img {
     width: 100%;
     height: auto;
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .column {
@@ -225,18 +268,6 @@ ul, a {
     margin-bottom: 1.7%;
   }
 
-  .foter {
-    background: #999999;
-    clear: both;
-    align-items: center;
-  }
-
-  .foter p {
-    width: 90%;
-    margin: auto;
-    border-top: 1px solid #000000;
-  }
-
   .pie-der, .pie-izq, .certificate {
     width: 75%;
     margin: 1.5% auto;
@@ -257,12 +288,12 @@ ul, a {
     border-radius: 50%;
   }
 
-  .pie-der h1 {
-    font-size: 25px;
-  }
-
   .pie-izq ul li {
     border-top: 1px solid #000000;
+  }
+
+  .pie-der h1 {
+    font-size: 25px;
   }
 
   .pie-izq ul li a i {
@@ -272,12 +303,235 @@ ul, a {
     color: #2ec276;
   }
 
-  .certificate {
-    border-top: 1px solid #000000;
-  }
-
   .certificate img {
     width: 100%;
     height: 60%;
+  }
+}
+
+/* ------responsve von vista tablets  */
+@media screen and (min-width:641px) and (max-width: 1024px) {
+  #btn {
+    width: auto;
+    margin: auto;
+    display: none;
+  }
+
+  .header label {
+    display: none;
+  }
+
+  /*
+  ---------Menu Scroll degradable fuente w3school
+  #navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+*/
+
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .navegacion label {
+    display: block;
+    width: 50px;
+    height: 75px;
+    margin: auto;
+  }
+
+  label .logo {
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 12.3px;
+  }
+
+  .navegacion {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    top: -150px;
+    background: rgba(0, 0, 0, 0.8);
+    transition: top 0.8s;
+  }
+
+  .navegacion #menu {
+    width: 45%;
+    margin: auto;
+    margin-top: 3.8%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+  }
+
+  #menu li {
+    width: auto;
+    height: auto;
+    margin: 1.8%;
+    text-align: center;
+    flex: auto;
+    padding: 5px;
+    border-radius: 25px;
+  }
+
+  .media {
+    width: auto;
+    margin: auto;
+    float: right;
+  }
+
+  .media ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .media ul li a i {
+    font-size: 35px;
+    padding: 10px 5px;
+    color: #8942ee;
+  }
+
+  .studio h3, .studio h5 {
+    width: 60%;
+    margin: 4.5% auto;
+    text-align: center;
+    color: #d87b38;
+  }
+
+  .studio-img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .studio-img img {
+    width: 40%;
+    height: 60%;
+    margin: auto;
+  }
+
+  .tattoist {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tattoist h2, .contact-tattoist h3 {
+    margin: auto;
+    width: 70%;
+  }
+
+  .tattoist p {
+    width: 70%;
+    margin: auto;
+    font-size: 17px;
+    margin-bottom: 2.5%;
+  }
+
+  .tattoist-perfil {
+    width: 46%;
+    height: auto;
+    margin: auto;
+  }
+
+  .tattoist-perfil img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .column {
+    -ms-flex: 24%;
+    flex: 23%;
+    max-width: 23.3%;
+    padding-left: 1.4%;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .contact-tattoist {
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+  }
+
+  .contact-old {
+    width: 40%;
+    margin: auto;
+  }
+
+  .contact-old img {
+    width: 100%;
+    height: 30%;
+    margin: 1.3% auto;
+  }
+
+  .contact-old ul {
+    width: 80%;
+    margin: auto 9.5%;
+    margin-bottom: 1.7%;
+  }
+
+  .pie-der, .pie-izq, .certificate {
+    width: 75%;
+    margin: 1.5% auto;
+    margin-top: 5%;
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pie-izq {
+    border-top: 1px solid #000000;
+  }
+
+  .pie-izq ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 30%;
+    margin: auto;
+  }
+
+  .pie-der img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+  }
+
+  .pie-der h1 {
+    font-size: 35px;
+  }
+
+  .pie-der h4 {
+    font-size: 25px;
+  }
+
+  .pie-izq ul li {
+    width: 33%;
+  }
+
+  .pie-izq ul li a i {
+    font-size: 60px;
+    padding: 15px;
+    margin: auto;
+    color: #2ec276;
+  }
+
+  .certificate img {
+    width: 50%;
+    height: 30%;
   }
 }

@@ -35,6 +35,23 @@ ul, a {
   display: none;
 }
 
+label .logo {
+  width: 100%;
+  border-radius: 25px;
+  margin-top: 12.3px;
+}
+
+.media {
+  width: auto;
+  margin: auto;
+  float: right;
+}
+
+#menu h5:hover {
+  color: #d87b38;
+  text-shadow: 1px 1px 5px #d87b38;
+}
+
 .header img {
   width: 100%;
   height: 65%;
@@ -57,9 +74,28 @@ ul, a {
   display: block;
 }
 
+.studio h3, .studio h5 {
+  margin: 2.1% auto;
+  text-align: center;
+  color: #d87b38;
+}
+
 .tattoist h2, .galery h2, .contact h2, .contact-tattoist h3 {
   font-size: 30px;
-  margin-top: 10px;
+  margin-top: 18px;
+  width: 90%;
+  margin: auto;
+}
+
+.tattoist p {
+  margin: auto;
+  font-size: 17px;
+  margin-bottom: 2.5%;
+}
+
+.galery-img {
+  width: 100%;
+  height: auto;
 }
 
 .row {
@@ -132,13 +168,12 @@ ul, a {
   }
 
   .navegacion {
+    clear: both;
     display: none;
     width: 100%;
     height: 100%;
-    top: 0;
     background: rgba(0, 0, 0, 0.8);
     position: fixed;
-    transition: all 1.6s ease-in-out;
   }
 
   .navegacion #menu {
@@ -150,13 +185,19 @@ ul, a {
     font-size: 25px;
   }
 
-  #menu li {
+  #menu li h5{
     width: 60%;
     margin: 2.1% auto;
     text-align: center;
     padding: 20px 20px;
     border-radius: 25px;
     background-color: #2ec276;
+  }
+
+
+  #menu li h5:hover {
+    background-color: #8942ee;
+    transform: scale(105%);
   }
 
   .media {
@@ -177,28 +218,8 @@ ul, a {
     color: #8942ee;
   }
 
-  .header h1, .header h4 {
-    text-align: center;
-    margin: auto;
-    transform: translateY(-125px);
-    padding: 5px;
-  }
-
-  .header h1 {
-    font-size: 60px;
-  }
-
-  .header h4 {
-    font-size: 35px;
-    margin-top: -3.7%;
-    margin-bottom: 150px;
-  }
-
   .studio h3, .studio h5 {
     width: 90%;
-    margin: 4.5% auto;
-    text-align: center;
-    color: #d87b38;
   }
 
   .studio-img {
@@ -220,9 +241,6 @@ ul, a {
 
   .tattoist p {
     width: 80%;
-    margin: auto;
-    font-size: 17px;
-    margin-bottom: 2.5%;
   }
 
   .tattoist-perfil {
@@ -234,11 +252,6 @@ ul, a {
   .tattoist-perfil img {
     width: 100%;
     height: 100%;
-  }
-
-  .galery-img {
-    width: 100%;
-    height: auto;
   }
 
   .column {
@@ -310,33 +323,12 @@ ul, a {
 }
 
 /* ------responsve von vista tablets  */
-@media screen and (min-width:641px) and (max-width: 1024px) {
-  #btn {
-    width: auto;
-    margin: auto;
-    display: none;
-  }
-
+/*
+---------Menu Scroll degradable fuente w3school
+*/
+@media screen and (min-width:641px) {
   .header label {
     display: none;
-  }
-
-  /*
-  ---------Menu Scroll degradable fuente w3school
-  #navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-  font-size: 17px;
-}
-*/
-
-  #navbar a:hover {
-    background-color: #ddd;
-    color: black;
   }
 
   .navegacion label {
@@ -344,12 +336,6 @@ ul, a {
     width: 50px;
     height: 75px;
     margin: auto;
-  }
-
-  label .logo {
-    width: 100%;
-    border-radius: 25px;
-    margin-top: 12.3px;
   }
 
   .navegacion {
@@ -381,12 +367,6 @@ ul, a {
     border-radius: 25px;
   }
 
-  .media {
-    width: auto;
-    margin: auto;
-    float: right;
-  }
-
   .media ul {
     display: flex;
     align-items: center;
@@ -400,9 +380,6 @@ ul, a {
 
   .studio h3, .studio h5 {
     width: 60%;
-    margin: 4.5% auto;
-    text-align: center;
-    color: #d87b38;
   }
 
   .studio-img {
@@ -415,6 +392,8 @@ ul, a {
   .studio-img img {
     width: 40%;
     height: 60%;
+    max-width: 400px;
+    max-height: 420px;
     margin: auto;
   }
 
@@ -430,20 +409,22 @@ ul, a {
 
   .tattoist p {
     width: 70%;
-    margin: auto;
-    font-size: 17px;
-    margin-bottom: 2.5%;
   }
 
   .tattoist-perfil {
     width: 46%;
     height: auto;
     margin: auto;
+    display: flex;
+    flex-flow: column wrap;
   }
 
   .tattoist-perfil img {
-    width: 100%;
+    width: 95%;
+    max-width: 400px;
     height: 100%;
+    max-height: 380px;
+    margin: auto;
   }
 
   .column {
@@ -469,12 +450,16 @@ ul, a {
   .contact-old {
     width: 40%;
     margin: auto;
+    display: flex;
+    flex-flow: column wrap;
   }
 
   .contact-old img {
     width: 100%;
+    max-width: 320px;
     height: 30%;
-    margin: 1.3% auto;
+    max-height: 350px;
+    margin: auto;
   }
 
   .contact-old ul {
@@ -533,5 +518,14 @@ ul, a {
   .certificate img {
     width: 50%;
     height: 30%;
+    max-width: 290px;
+    max-height: 150px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+
+  .header #inicio{
+    max-height: 620px;
   }
 }

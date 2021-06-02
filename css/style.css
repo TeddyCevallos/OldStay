@@ -84,7 +84,7 @@ label .logo {
   width: 100%;
   height: auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row-reverse  wrap;
 }
 
 .studio-img img {
@@ -288,7 +288,7 @@ label .logo {
   .studio-img img {
     width: 80%;
     height: 70%;
-    top: 8px;
+    padding-top: 8px;
   }
 
   .contact .baner a img {
@@ -442,7 +442,7 @@ label .logo {
   }
 
   .tattoist-perfil {
-    width: 46%;
+    width: 44%;
   }
 
   .tattoist-perfil img {
@@ -530,4 +530,8 @@ label .logo {
   .header #inicio {
     max-height: 620px;
   }
+  .tattoist-perfil{
+    width: 35%;
+  }
+
 }
